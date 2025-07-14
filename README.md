@@ -15,8 +15,31 @@ QCQ-CNN is composed of three main stages:
 3. **Quantum Classifier (Optional)**  
    Uses a Qiskit-based EstimatorQNN integrated via TorchConnector for end-to-end hybrid learning.
 
-## 📂 Structure
+## ⚙️ Installation
+Before running the project, make sure you have Python 3.8 or later installed. Then install the required packages:
 
+# Core libraries
+pip install numpy matplotlib seaborn
+
+# Deep learning frameworks
+pip install tensorflow==2.11.0       # or another compatible version
+pip install torch torchvision
+
+# Quantum libraries
+pip install pennylane                # For quanvolutional feature extraction
+pip install qiskit                   # For quantum neural network (QNN) classification
+pip install qiskit-machine-learning  # For EstimatorQNN and TorchConnector
+⚠️ Note: For GPU acceleration, ensure CUDA-compatible versions of tensorflow and torch are installed.
+
+## 📂 Structure
+├── quantum/ # Quanvolutional layer implementation (PennyLane)
+├── qiskit_qnn/ # QNN classifier using Qiskit EstimatorQNN
+├── model_tf/ # TensorFlow/Keras models for comparison
+├── data/ # Saved .npy quantum features and MNIST subsets
+├── train_cnn.py # Classical CNN on quantum features
+├── train_qcnn.py # Hybrid QNN-CNN training (Qiskit + PyTorch)
+├── visualize.py # Visualize feature maps from Quanvolution
+└── README.md
 
 ## 🧪 Dataset
 
