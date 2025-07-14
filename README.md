@@ -18,7 +18,8 @@ QCQ-CNN is composed of three main stages:
 ## ⚙️ Installation
 Before running the project, make sure you have Python 3.8 or later installed. Then install the required packages:
 
-# Core libraries
+```bash
+#Core libraries
 pip install numpy matplotlib seaborn
 
 # Deep learning frameworks
@@ -29,6 +30,7 @@ pip install torch torchvision
 pip install pennylane                # For quanvolutional feature extraction
 pip install qiskit                   # For quantum neural network (QNN) classification
 pip install qiskit-machine-learning  # For EstimatorQNN and TorchConnector
+```
 ⚠️ Note: For GPU acceleration, ensure CUDA-compatible versions of tensorflow and torch are installed.
 
 ## 📂 Structure
@@ -51,8 +53,9 @@ pip install qiskit-machine-learning  # For EstimatorQNN and TorchConnector
 
 ## ⚙️ Requirements
 
-bash
+```bash
 pip install pennylane qiskit tensorflow torch torchvision matplotlib seaborn.
+```
 
 ## 🚀 Quick Start
 ## Step 1: Extract Quantum Features
