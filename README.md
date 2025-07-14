@@ -32,7 +32,7 @@ bash
 pip install pennylane qiskit tensorflow torch torchvision matplotlib seaborn.
 
 ## 🚀 Quick Start
-Step 1: Extract Quantum Features
+## Step 1: Extract Quantum Features
 
 ## Step 2: Train MLP and Quanvo + MLP
 
